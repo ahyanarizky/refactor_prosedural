@@ -1,10 +1,14 @@
 const controller = require('../controller/controller')
 
 class Dice {
-    add() {
+    static add() {
+        console.log('addDice');
         controller.addDice
     }
-    roll() {
+    static roll() {
+        console.log('rollDice');
         controller.rollDice
     }
 }
+
+module.exports = Dice
