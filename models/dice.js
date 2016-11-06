@@ -1,13 +1,12 @@
-const controller = require('../controller/controller')
+const createDice = require('../controller/controller_add')
+const rollDice = require('../controller/controller_roll')
 
 class Dice {
     static add() {
-        console.log('addDice');
-        controller.addDice
+        createDice()
     }
     static roll() {
-        console.log('rollDice');
-        controller.rollDice
+        rollDice()
     }
 }
 
